@@ -1,6 +1,4 @@
 
-#ref:https://rpubs.com/naveen26246/117238
-memory.limit(8000000)
 # Load Libraries
 library(tm)
 library(plyr)
