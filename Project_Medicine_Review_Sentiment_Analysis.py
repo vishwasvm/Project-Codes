@@ -1,7 +1,7 @@
 
 import pandas as pd
 
-df = pd.read_csv("V:\Excelr\Assignment\Live projects\Project_medicine review\medicine review_train_test_raw.csv")
+df = pd.read_csv('V:\Desktop\medicine.csv')
 df.shape
 df.head()
 df.info()
