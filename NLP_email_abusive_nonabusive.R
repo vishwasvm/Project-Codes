@@ -8,7 +8,7 @@ library(e1071)
 library(knitr)
 
 # Read data
-rawdata <- email1_full_clean2[,(1:2)]
+rawdata <- email1_full
 names(rawdata) <- c("Class","content")
 kable(rawdata[1:8,])
 str(rawdata)
