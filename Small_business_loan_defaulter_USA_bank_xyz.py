@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Jul  6 02:31:02 2020
-
-@author: Vishwas
-"""
 
 #################################################################################
 # Business Problem: The bank wants to predict which companies will default on their loans based on their financial information.
