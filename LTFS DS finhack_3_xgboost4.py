@@ -4,7 +4,7 @@ Created on Mon Feb  1 01:15:38 2021
 
 @author: Vishwas
 """
-#### LTFS DS finhack_3 loan top up prediction problem ####
+#### LTFS DS finhack_3 competition on loan top up prediction problem ####
 #### Below is the solution for loan top up prediction ####
 
 import numpy as np
