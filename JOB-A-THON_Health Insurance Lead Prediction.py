@@ -23,10 +23,10 @@ df.info()
 
 df.rename(columns = {'Health Indicator':'Health_Indicator'}, inplace = True) 
 
-# check for null values
+# Check for null values
 df.isnull().sum().sum()
 
-# number of duplicate rows in dataframe
+# Number of duplicate rows in dataframe
 print("\nDuplicate rows in DataFrame:")
 print(df.duplicated().sum())
 
