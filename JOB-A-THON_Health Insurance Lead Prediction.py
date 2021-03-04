@@ -8,7 +8,7 @@ Created on Sat Feb  27 19:10:55 2021
 #### Below is the solution for Insurance Lead Prediction ####
 
 
-# import libraries
+# Import libraries
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
@@ -30,7 +30,7 @@ df.isnull().sum().sum()
 print("\nDuplicate rows in DataFrame:")
 print(df.duplicated().sum())
 
-# replace 14+ with 15 in column "Holding_Policy_Duration"
+# Replace 14+ with 15 in column "Holding_Policy_Duration"
 df["Holding_Policy_Duration"].replace({"14+": "15"}, inplace=True)
 
 # Replace null values with -1 
