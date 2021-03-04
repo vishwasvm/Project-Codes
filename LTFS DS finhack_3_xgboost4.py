@@ -16,7 +16,7 @@ from sklearn.metrics import classification_report,confusion_matrix
 import random 
 random.seed(110)
 
-df=pd.read_csv('V:LTFS Data Science FinHack 3/Data_csv/Train/train_Data.csv')
+df=pd.read_csv('V:LTFS Data Science FinHack 3/Data_csv/Train/train_Data.csv') # After preprocessing and EDA
 df.info()
 
 # Rename column "Top-up Month"
@@ -206,7 +206,7 @@ xgmodel4.fit(X_train_res, y_train_res)
 xgmodel4_predict = xgmodel4.predict(X_test)
 
 # Import test set
-X_test1=pd.read_csv('V:LTFS Data Science FinHack 3/Data_csv/cleaned dataset_test/test_data_processed.csv')
+X_test1=pd.read_csv('V:LTFS Data Science FinHack 3/Data_csv/cleaned dataset_test/test_data_processed.csv') # After preprocessing
 X_test1.info()
 
 # predict
