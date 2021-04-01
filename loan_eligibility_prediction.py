@@ -1,6 +1,6 @@
 
 ##### Loan prediction problem, datascience competition organized by analyticsvidhya.com
-
+##### EDA is in another script
 import numpy as np 
 import pandas as pd 
 import matplotlib.pyplot as plt
@@ -18,7 +18,7 @@ test_df = pd.read_csv('test_lAUu6dG.csv')
 df.info()
 test_df.info()
 
-# Remove column 'ID'
+# Remove column 'Loan_ID'
 df.drop(['Loan_ID'], axis=1, inplace=True)
 
 # Check for null values
@@ -249,7 +249,7 @@ print(df2)
 # Map columns in the order of train data
 df2 = df2[['Dependents','ApplicantIncome','CoapplicantIncome','LoanAmount','Loan_Amount_Term','Credit_History','Education','Gender','Married','Property_Area','Self_Employed','ApplicantIncome_by_loanAmt','ratio_loan_amount','Total_income_app_co','Total_income_by_loanAmt']]
 
-# create dummies for selected categorical columns excluding target column
+# Create dummies for selected categorical columns excluding target column
 df2 = pd.get_dummies(df2, columns=['Gender', 'Married', 'Education', 'Self_Employed', 'Property_Area']) 
 
 # Normalization of data 
