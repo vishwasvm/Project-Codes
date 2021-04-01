@@ -170,8 +170,8 @@ test_df['Interest_log'] = np.log10(test_df['ApplicantIncome'])
 
 # Find corelation in df
 corr = df.corr()
-sns.heatmap(df=corr.dropna(),cmap='Blues',linewidth=0.5)
-sns.heatmap(df=corr.dropna(),mask = corr < 0.8,cmap='Blues',linewidth=0.5)
+sns.heatmap(data=corr.dropna(),cmap='Blues',linewidth=0.5)
+sns.heatmap(data=corr.dropna(),mask = corr < 0.8,cmap='Blues',linewidth=0.5)
 
 # Drop columns having very high correlation: "Total_income_app_co", "Total_income_by_loanAmt"
 df.drop(['Total_income_app_co'], axis=1, inplace=True)
